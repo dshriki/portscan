@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-from portscan import __version__
+#from portscan import __version__
 
 requires = ['argparse','socket']
 
