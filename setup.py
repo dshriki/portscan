@@ -18,7 +18,7 @@ dist = setup(
     test_suite="supervisor.tests",
     entry_points={
         'console_scripts': [
-            'scanner = portscan.portscan1:main',
+            'scanner = portscan:main',
         ],
     },
 )
