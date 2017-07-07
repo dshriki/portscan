@@ -1,12 +1,14 @@
 import socket
 import argparse
 
-#parser=argparse.ArgumentParser()
-#parser.add_argument("dest")
-#parser.add_argument("start")
-#parser.add_argument("stop")
+def get_args():
+    parser=argparse.ArgumentParser()
+    parser.add_argument("dest")
+    parser.add_argument("start")
+    parser.add_argument("stop")
 
-#args = parser.parse_args()
+    args = parser.parse_args()
+    return args
 
 
 
@@ -32,10 +34,11 @@ class port_inspect:
             print ("port " + str(port) + " is close")
 
 def main():
-    #host_ip=args.dest
+    ARGS=get_args()
+    host_ip=ARGS.dest
     host_ip="8.8.8.8"
     google=port_inspect(host_ip)
-    start_port=int(20)#args.start)
-    stop_port=int(30)#args.stop)
+    start_port=int(ARGS.start)
+    stop_port=int(ARGS.stop)
     google.run_ports(start_port,stop_port)
-#main()
+main()
