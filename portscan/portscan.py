@@ -36,7 +36,7 @@ class port_inspect:
 def main():
     ARGS=get_args()
     host_ip=ARGS.dest
-    host_ip="8.8.8.8"
+    #host_ip="8.8.8.8"
     google=port_inspect(host_ip)
     start_port=int(ARGS.start)
     stop_port=int(ARGS.stop)
