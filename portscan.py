@@ -41,4 +41,6 @@ def main():
     start_port=int(ARGS.start)
     stop_port=int(ARGS.stop)
     google.run_ports(start_port,stop_port)
-main()
+
+if __name__ == "__main__":
+    main()
