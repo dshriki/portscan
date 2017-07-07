@@ -1,8 +1,10 @@
 from setuptools import setup, find_packages
+import os
 #from portscan import __version__
 
 requires = ['argparse','socket']
-
+from setuptools import setup, find_packages
+here = os.path.abspath(os.path.dirname(__file__))
 dist = setup(
     name='scanner',
     #version=__version__,
